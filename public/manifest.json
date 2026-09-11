@@ -1,0 +1,25 @@
+{
+  "name": "Курсометр — курсы за неделю",
+  "short_name": "Курсометр",
+  "description": "Учебное приложение с курсами USD, EUR и CNY за неделю",
+  "lang": "ru",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101820",
+  "theme_color": "#101820",
+  "icons": [
+    {
+      "src": "/icons/currency-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/currency-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
