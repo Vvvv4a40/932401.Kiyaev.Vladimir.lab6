@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Курсы USD, EUR и CNY за последнюю неделю">
+  <title>Курсы за неделю</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/currency-192.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="На главную">
+      <span class="logo-mark">₽</span>
+      <span>Курсометр</span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a class="active" href="/">Курсы</a>
+      <a href="/about">О работе</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Вариант 12</p>
+      <h1>Курсы валют за неделю</h1>
+      <p>Небольшая сводка по отношению к рублю. Данные учебные и обновляются при выборе валюты.</p>
+    </section>
+
+    <section class="rates-panel" aria-labelledby="panel-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">Выбор валюты</p>
+          <h2 id="panel-title">Последние 7 дней</h2>
+        </div>
+        <div class="currency-switcher" aria-label="Валюта">
+          <button class="currency-button selected" type="button" data-currency="USD" aria-pressed="true">USD</button>
+          <button class="currency-button" type="button" data-currency="EUR" aria-pressed="false">EUR</button>
+          <button class="currency-button" type="button" data-currency="CNY" aria-pressed="false">CNY</button>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary-item">
+          <span>Среднее значение</span>
+          <strong id="average">—</strong>
+        </div>
+        <div class="summary-item">
+          <span>Выбрано</span>
+          <strong id="current-currency">USD</strong>
+        </div>
+        <div class="summary-item summary-status">
+          <span>Состояние</span>
+          <strong id="status" aria-live="polite">Загрузка</strong>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <div class="chart-card">
+          <h3>График</h3>
+          <div id="chart" class="chart" role="img" aria-label="График курса USD за семь дней" aria-busy="true"></div>
+        </div>
+
+        <div class="list-card">
+          <h3>Значения по дням</h3>
+          <ol id="rate-list" class="rate-list"></ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Лабораторная работа №6</span>
+    <span>Владимир Кияев</span>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
