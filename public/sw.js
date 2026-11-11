@@ -1,4 +1,4 @@
-const cacheName = 'currency-week-v1';
+const cacheName = 'currency-week-v2';
 const appShell = [
   '/',
   '/about',
